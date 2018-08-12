@@ -51,20 +51,12 @@
         <div class="h-right" >
           <table>
             <tr>
-              <td><b>Station:</b></td>
-              <td>$station.hardware</td>
-            </tr>
-            <tr>
               <td><b>Software:</b></td>
               <td><a href="http://weewx.com/" target="_blank" >WeeWX v$station.version</a></td>
             </tr>
             <tr>
               <td><b>Weewx uptime:</b></td>
               <td>$station.uptime</td>
-            </tr>
-            <tr>
-              <td><b>Server uptime:</b></td>
-              <td>$station.os_uptime</td>
             </tr>
             #if $Extras.has_key('cwop') and $Extras.has_key('crahs')
             <tr>
@@ -93,7 +85,7 @@
       <div class="container" >
         <div class="left" >
           <div class="card" >
-            <h1><i class="fa fa-bolt m-orange" ></i> All Time Records (Since Nov. 2007)</h1>
+            <h1><i class="fa fa-bolt m-orange" ></i> All Time Records (Since April 2018)</h1>
             <table class="tablespacer">
               <tr>
                 <td colspan="3"><b>Outside Temperatures</b></td>
