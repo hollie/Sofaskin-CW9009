@@ -10,7 +10,7 @@ function checkDiff(datestr) {
     var text = document.createElement('div');
     // Fixme: Add "icon"
     if (date - refreshed > diff) {
-        text.innerHTML = "<i class='fa fa-exclamation-triangle m-orange'></i><b> Old Weather Data </b>";
+        text.innerHTML = "<i class='fa fa-exclamation-triangle m-orange'></i><b> Old Weather Data (" + diff + "</b>";
 //  } else {
 //    text.innerHTML = "<i class=''></i> Fresh Weather";
     }

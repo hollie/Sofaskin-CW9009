@@ -44,7 +44,7 @@
           <p><i class="fa fa-clock-o" ></i> $current.dateTime $current.dateTime.format("%Z")</p>
           <p id="freshweather" class="m-orange"></p>
           <script>
-            window.onload = checkDiff("$current.dateTime ($current.dateTime.format('%Z'))");
+            window.onload = checkDiff("$current.dateTime.format('%Y-%m-%d %H:%M:%S')");
           </script>
         </div>
         <div class="h-right">
@@ -202,18 +202,6 @@
                 <td>Low UV</td>
                 <td>$week.UV.min</td>
                 <td>$week.UV.mintime</td>
-              </tr>
-              #end if
-              #if $week.ET.has_data and $week.ET.sum.raw >0.0
-              <tr>
-                <td>High ET</td>
-                <td>$week.ET.max</td>
-                <td>$week.ET.maxtime</td>
-              </tr>
-              <tr>
-                <td>Low ET</td>
-                <td>$week.ET.min</td>
-                <td>$week.ET.mintime</td>
               </tr>
               #end if
               #if $week.radiation.has_data
